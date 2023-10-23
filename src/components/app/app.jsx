@@ -2,8 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import Home from "../home/home"
 import Navbar from "../navbar/navbar"
 import Err from "../err/err"
-const category = "urop"
-const id = "id"
+const category = "categry"
 const App = () => {
     return (
         <div className='bg-neutral-900 text-white'>
@@ -17,7 +16,8 @@ const App = () => {
                 <Route path="/works" element={<Home />} />
                 <Route path="/login" element={<Home />} />
                 <Route path="/signup" element={<Home />} />
-                <Route path={"category/:category/:id"} element={<Home />} />
+                <Route path={"category="+ category +"/:id"} element={<Home />} />
+                <Route path={"category="+ category} element={<Home />} />
                 <Route path={"dashboard/:username"} element={<Home />} />
                 <Route path="*" element={<Err />} />
             </Routes>
