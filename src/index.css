@@ -1,13 +1,22 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-shadow:hover {
+    box-shadow: 0 0 20px #00b7ff;
+    transition: all 0.2s linear;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fixed-nav {
+    position: fixed;
+    width: 100%;
+}
+
+@font-face {
+    font-family: Fira_sans;
+    src: url("./fonts/FiraSans-Regular.ttf");
+}
+
+*{
+    font-family: Fira_sans;
 }
